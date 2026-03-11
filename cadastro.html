@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+   
+    <title>Barbearia Amigos Login</title>
+
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    background-image: url(./img/fundo-site.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px 0 0 10px;
+}
+
+/* dimesionar caixa deixar afastado das bordas */
+
+body .container {
+
+    width: 500px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    color: #fff;
+    padding: 50px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.container h1 {
+
+    font-size: 26px;
+    text-align: center;
+}
+
+/*Redimencionar a Logo*/
+.container form img {
+
+    width: 280px;
+    height: 280%;
+}
+
+.input-box {
+
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    padding: 0px 0px 50px 0px;
+}
+
+.input-box input {
+
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+
+    position: absolute;
+    right: 20px;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.remember-forgot {
+
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+
+    text-decoration: underline;
+}
+
+/* Botão de Login estilizado */
+
+.Login {
+
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.Login:hover {
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.Register-link {
+
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.Register-link a {
+
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Register-link a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+</style>
+
+
+<body>
+
+    <main class="container">
+
+        <form>
+
+            <h1 style="font-size: 35px;"><em>Barbearia Amigos Cadastro</em></h1>
+
+            <div style="text-align: center;">
+
+                <img src="/meu site/Conteúdo/projeto-barbearia - Copia/img/logo_fundo_branco.webp" alt="Logo Barbearia Amigos">
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="nome">Nome Completo</label>
+                <input placeholder="Digite seu Nome" type="nome" name="nome" id="nome" required>
+
+                <i class='bx bxs-user'></i>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label for="nome">E-mail</label>
+                <input placeholder="E-mail" type="e-mail" name="e-mail" id="e-mail">
+
+                <i class='bx bxs-lock-alt'></i>
+
+            </div>
+            
+        <div class="input-box">
+
+                <label for="nome">Confirme seu E-mail</label>
+               <input placeholder="Confirme seu E-mail" type="e-mail" name="e-mail" id="e-mail">
+
+                <i class='bx bxs-user'></i>
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="nome">Senha</label>
+                <input placeholder="Digite sua Senha" type="password" name="senha" id="senha">
+
+                <i class='bx bxs-lock-alt'></i>
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="nome">Confirme sua Senha</label>
+                <input placeholder="Confirme sua Senha" type="password" name="senha" id="senha">
+
+                <i class='bx bxs-lock-alt'></i>
+
+                 <button type="submit" class="Login">Cadastrar-se</button>
+<!--
+            </div>
+            <div class="remember-forgot">
+
+                <label>
+
+                    <input type="checkbox">
+                    Lembrar-me
+
+                </label>
+
+                <a href="#">Esqueci minha senha</a>
+
+            </div>
+
+            <button type="submit" class="Login">Login</button>
+
+            <div class="Register-link">
+
+                <p>Ainda não tem uma conta? <a href="#">Registre-se</a></p>
+
+            </div>
+            -->
+
+        </form>
+        
+    </main>
+
+</body>
+
+</html>

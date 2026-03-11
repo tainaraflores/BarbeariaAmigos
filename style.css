@@ -1,0 +1,163 @@
+body{
+background: #333;
+background-image: url(./img/fundo-site.png);
+}
+
+/*Rolagem suave*/
+html{
+scroll-behavior: smooth;
+}
+
+/* Estilos básicos da barra de navegação */
+.navbar {
+background-color:none;
+font-family: Arial, sans-serif;
+position:fixed;
+ width:100%;
+ top:0;
+ background:#5d2c1e;
+ padding:10px 700px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ box-shadow:0 2px 10px rgba(0,0,0,0.1);
+ z-index:1000;
+ }
+
+
+.menu-principal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal > li {
+    display: inline-block; /* Alinha os itens na horizontal */
+    position:relative; /* Necessário para posicionar o submenu absoluto */
+}
+
+.menu-principal a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/* Cor de fundo ao passar o mouse no item principal */
+.menu-principal > li > a:hover {
+    background-color:#ca925a;
+}
+
+/* --- O CORAÇÃO DO MENU: DROPDOWN --- */
+
+/* Esconde o submenu por padrão */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Estilo dos links dentro do submenu */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Muda a cor dos itens do submenu ao passar o mouse */
+.dropdown-content a:hover {
+    background-color:#ca925a;
+}
+
+/* Mostra o submenu ao passar o mouse no pai (.dropdown) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* SEÇÕES */
+section{ padding:80px 40px 60px; }
+.section-title{
+ text-align:center;
+ margin-bottom:40px;
+ font-size:40px;
+ color:white;
+}
+/* CARDS */
+.cards{
+display:flex;
+ gap:30px;
+ justify-content:center;
+ flex-wrap:wrap;
+}
+.card{
+ background:#ca925a9c;
+ padding:30px;
+ width:200px;
+ border-radius:15px;
+ box-shadow:0 4px 15px rgba(0,0,0,0.08);
+ text-align:center;
+ transition:0.3s;
+ font-size: 20px;
+ border: 1px solid white;
+}
+.card:hover{
+ transform:translateY(-8px);
+ box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+.card ul{
+ text-align:left;
+ padding-left:20px;
+}
+
+a{
+text-decoration: none;
+color:rgb(255, 255, 255);
+font-weight: 100px;
+padding: 2px;
+}
+
+a:hover{
+border-radius: 2px;
+background-color:#ca925a;
+}
+
+/*botão*/
+.borda{
+    background:#ca925a; /*cor da borda toda*/
+    border: 2px solid #ffffff; /*cor e espessura da borda*/
+    padding: 2px; /*espaçamento entre texto e borda*/
+    border-radius: 5px; /*arredondamento de bordas*/
+}
+
+button{
+    cursor: pointer;
+    
+}
+
+.whatsapp-button{
+    position: fixed;
+    bottom: 20px;
+    background-color: #25d366;
+    color:white;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: 0.3s;
+    
+}
+
+.whatsapp-button:hover{
+    background-color: #1ebe57;
+}
